@@ -1,10 +1,12 @@
 ---
 title: "Doppler Paper"
-author: "Tom Allen"
+author: "Allen. T. S., Stenmark T., Widenhorn, R."
 date: "6/19/2018"
 output:
   pdf_document: default
   html_document: default
+header-includes: 
+  - \usepackage{tikz}
 bibliography: bibliography.bib
 ---
 
@@ -15,9 +17,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed  to simulate Doppler velocity measurments from ultrasound imaging.
+We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed  to simulate Doppler velocity measurments from ultrasound imaging.  
+
+This activity has the following objectives.  First to demonstrate to students how the Doppler shift can be used to determine the speed of an object in the specific cases of a stationary sound source and reciever and a moving reflecting surface.  Second, to demonstrate how this model can be built upon to accommodate an angled reflecting surface.
 
 
 
 Citation [@meltzer_resource_2012].
+
+## TikZ picture
+- Here is a TikZ picutre
+
+\begin{tikzpicture}
+\draw (0,0) circle (2cm);
+\end{tikzpicture}
 
