@@ -15,5 +15,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
+We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed  to simulate Doppler velocity measurments from ultrasound imaging.
+
+
+
 Citation [@meltzer_resource_2012].
 
