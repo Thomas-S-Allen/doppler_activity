@@ -1,6 +1,6 @@
 ---
 title: "Doppler Paper"
-author: "Allen. T. S., Stenmark T., Widenhorn, R."
+author: "Allen. T. S., DeStephano, P., Widenhorn, R."
 date: "6/19/2018"
 output:
   pdf_document: default
