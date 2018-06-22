@@ -1,6 +1,6 @@
 ---
 title: "Doppler Paper"
-author: "Allen. T. S., DeStephano, P., Widenhorn, R."
+author: "Allen. T. S., Stenmark, T., Widenhorn, R."
 date: "6/19/2018"
 output:
   pdf_document: default
@@ -17,10 +17,47 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed  to simulate Doppler velocity measurments from ultrasound imaging.  
+We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed to simulate Doppler velocity measurments from ultrasound imaging.  
 
 This activity has the following objectives.  First to demonstrate to students how the Doppler shift can be used to determine the speed of an object in the specific cases of a stationary sound source and reciever and a moving reflecting surface.  Second, to demonstrate how this model can be built upon to accommodate an angled reflecting surface.
 
+At non-relativistic speeds the change in frequency of a wave observed at a moving reciever from the initial frequency emitted at a moving source is given by
+
+$$
+f^{\prime} = \frac{c + v_{r}}{c + v_{s}} f_{0}.
+$$
+Where $f^{\prime}$ is the measured frequency, $c$ is the speed of sound, $v_{r}$ is the speed of the reciever, $v_{s}$ is the speed of the source, and $f_{0}$ is the emitted frequency.
+
+To mimic measuring blood flow speed with ultrasound, we use an apparatus that contains a stationary initial sound source, a moving reflector, and a stationary receiver located near the initial source.  We can consider the the final frequency measured at the receiver to be the result of two Doppler shifts.  The first Doppler shift results from the moving receiver reflecting the intial sound pulse
+
+$$
+\begin{split}
+f^{\prime} &= \frac{c + v_{r} }{c + v_{s} } f_{0} \\
+ &= \frac{c + v_{r} }{c} f_{0}
+\end{split}
+$$
+
+since $v_{s} = 0$.  The second Doppler shift results from the reflected wave now being "emitted" from the moving reflector with a frequency of $f^{\prime}$.  This reflected pulse will then be measured at the receiver with a frequency
+
+$$
+\begin{split}
+f^{\prime \prime} &= \frac{c + v_{r^{\prime}}}{c + v_{s^{\prime}}} f^{\prime} \\
+&= \frac{c + v_{r^{\prime}}}{c + v_{s^{\prime}}} \frac{c + v_{r}}{c} f_{0} \\
+&= \frac{c}{c - v_{r}} \frac{c + v_{r}}{c} f_{0} \\
+&= \frac{c + v_{r}}{c - v_{r}} f_{0} 
+\end{split}
+$$
+
+since, $v_{s^{\prime}} = -v_{r}$.
+
+### Apperatus
+
+This activity makes use of commercially available equipment data aquisition software commonly used in introductory laboratories.  The equipment includes a motion encoding cart, receiver and track, with a custome made plastic reflector to attach to the cart.   The sound source is generated with a function generator and a speaker, and recieved with a microphone.  The LabQuest Mini and LabQuest 2, both devices from Vernier, and the Logger Pro software were used to aquire and log the data.    
+
+
+
+
+University of Colorado [lab](https://www.colorado.edu/physics/phys1140/phys1140_sm98/Experiments/M6/M6.html) exercise using a sound source moving on a track.
 
 
 Citation [@meltzer_resource_2012].
