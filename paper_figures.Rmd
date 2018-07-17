@@ -1,0 +1,103 @@
+---
+title: "Dopler Figures"
+author: "Tom Allen"
+date: "6/28/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(readr)
+```
+
+
+```{r}
+
+rename_cols <- function(df) {
+  
+  df <- df %>% 
+    rename(Frequency = `Time - Frequency`, FFT = `Offset Pressure - FFT`)
+  
+  return(df)
+  
+}
+
+frequency_plot <- function(df,limits=c(19990,20050)) {
+  
+  plot <- df %>% 
+    rename_cols %>% 
+    ggplot(aes(x=Frequency,y=FFT)) +
+    geom_bar(stat="identity") +
+    xlim(limits)
+}
+
+
+```
+
+
+## Approaching Cart
+
+Let's start with the three runs where the cart is approaching.  
+
+First run.  
+```{r}
+
+data <- read_csv("data/DopplerAproaching1.csv")
+
+plot <- data %>% 
+  frequency_plot(limits=c(19990,20030))
+plot
+
+ggsave("figures/approaching1_frequency.pdf")
+
+```
+
+
+```{r}
+
+data <- read_csv("data/DopplerAproaching2.csv")
+
+plot <- data %>% 
+  frequency_plot(limits=c(19990,20050))
+plot
+
+ggsave("figures/approaching2_frequency.pdf")
+```
+
+```{r}
+
+data <- read_csv("data/DopplerAproaching3.csv")
+
+plot <- data %>% 
+  frequency_plot(limits=c(19990,20090))
+plot
+
+ggsave("figures/approaching3_frequency.pdf")
+
+```
+
+```{r}
+
+data <- read_csv("data/DopplerReceeding1.csv")
+
+plot <- data %>% 
+  frequency_plot(limits=c(19970,20010))
+plot
+
+ggsave("figures/receding_frequency.pdf")
+
+```
+
+```{r}
+
+data <- read_csv("data/DopplerAproachingAngle1.csv")
+
+plot <- data %>% 
+  frequency_plot(limits=c(19990,20040))
+plot
+
+ggsave("figures/receding_frequency.pdf")
+
+```

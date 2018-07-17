@@ -19,7 +19,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 We present a novel activity to demonstrate the Doppler Shift of a sound wave incident, at an angle, upon a moving reflector.  This activity is intendend for use in an introductory physics laboratory focused on preparing students for the health and medical fields.  The activity is designed to simulate Doppler velocity measurments from ultrasound imaging.  
 
-This activity has the following objectives.  First to demonstrate to students how the Doppler shift can be used to determine the speed of an object in the specific cases of a stationary sound source and reciever and a moving reflecting surface.  Second, to demonstrate how this model can be built upon to accommodate an angled reflecting surface.
+This activity has the following objectives.  First, to demonstrate to students how the Doppler shift can be used to determine the speed of an object in the specific cases of a stationary sound source and reciever and a moving reflecting surface.  Second, to demonstrate how this model can be built upon to accommodate an angled reflecting surface.
+
+Laboratory activities appropriate for the first objective have been discussed in the literature already, see @gomez-tejedor_acoustic_2014, and references therin.  The second objective, however, is novel, and directly 
+
+
 
 At non-relativistic speeds the change in frequency of a wave observed at a moving reciever from the initial frequency emitted at a moving source is given by
 
@@ -52,13 +56,24 @@ since, $v_{s^{\prime}} = -v_{r}$.
 
 ### Apperatus
 
-This activity makes use of commercially available equipment data aquisition software commonly used in introductory laboratories.  The equipment includes a motion encoding cart, receiver and track, with a custome made plastic reflector to attach to the cart.   The sound source is generated with a function generator and a speaker, and recieved with a microphone.  The LabQuest Mini and LabQuest 2, both devices from Vernier, and the Logger Pro software were used to aquire and log the data.    
+This activity makes use of commercially available equipment data aquisition software commonly used in introductory laboratories.  The equipment includes a motion encoding cart, receiver and track, with a custome made plastic reflector to attach to the cart.   The sound source is generated with a function generator and a speaker, and recieved with a microphone.  The LabQuest Mini and LabQuest 2, both devices from Vernier, and the Logger Pro software were used to aquire and log the data.
 
+![Figure: Test setup](figures/test_setup1.JPG)
 
+### Experiment 1
 
+The first experiment is a measurement of the velocity of a cart using a Doppler shifted echo.  A cart with an attached re
+
+![Figure: Results of experiment 1](figures/approaching1_frequency.pdf)
 
 University of Colorado [lab](https://www.colorado.edu/physics/phys1140/phys1140_sm98/Experiments/M6/M6.html) exercise using a sound source moving on a track.
 
+
+## Uncertainty in Experimental methods.  
+
+* Consistant cart speed throughout experiment
+  - means adjusting the level of the track
+* How uncertain can the experiment be and still measure the effect of having the reflector 
 
 Citation [@meltzer_resource_2012].
 
@@ -69,3 +84,12 @@ Citation [@meltzer_resource_2012].
 \draw (0,0) circle (2cm);
 \end{tikzpicture}
 
+
+## Appendix
+
+* LoggerPro profile
+
+* LoggerPro/LabQuest2 Images
+  - Mention the slope in the velocity graph as the cart slows down due to the track being level.
+  
+  REverse axis on LabQuest for 
