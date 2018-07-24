@@ -98,6 +98,6 @@ plot <- data %>%
   frequency_plot(limits=c(19990,20040))
 plot
 
-ggsave("figures/receding_frequency.pdf")
+ggsave("figures/approaching_angle_frequency.pdf")
 
 ```
